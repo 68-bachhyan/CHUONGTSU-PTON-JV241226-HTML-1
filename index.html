@@ -1,18 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+          h1.xanh {color:blue}
+    </style>
+    <style>
+        body{margin-left: auto;max-width: auto;}
+        .phan1{width: 250 ;height: 350; border:1px solid red; margin:auto;border-radius: 5px;box-shadow: 2px 4px seashell;}
+
+    </style>
 </head>
 <body>
-   <h1>Tuổi Thơ Với Những Điều Tuyệt Vời</h1> 
-   <p>
-    Tuổi thơ với những kỉ niệm khó quên. Tôi nhớ ngày ấy , khi các bạn cùng xóm tụ tập lại với nhau cùng chơi thả diều ,bắt bướm , hái hoa... 
-    Với những ngày mưa thì cùng nhau tắm mưa.... Thật hồn nhiên trong sáng biết bao. Giờ đây, khi trưởng thành , tôi luôn bận rộn với công việc,bộn bề trong cuộc sống. Tôi đã đánh mất đi tuổi thơ
-    ngày ấy.Nhiều tôi khao khát được trở về giai đoạn tuổi thơ hồn nhiên ngày ấy...
-</p>
-<!-- nen chia folder nhu thay nhe moi bai 1 folder rieng biet nhe -->
- <!-- va moi lan lam xong thi ctrl + S lai de luu file nhe -->
-</body>
-</html>
+ <h1 class="xanh">Chao mung den voi trang web cua toi</h1>
+ <h5>Day la trang web dau tien cua toi. Toi dang hoc lap trinh web va day la san pham dau tien cua toi</h5>
+ <div class="phan1">
+ <img src="./index_files/anh1.jpg" alt="">
+ 
+</div>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
